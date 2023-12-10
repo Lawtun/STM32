@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"buoi1\startup_stm32f411xe.o"
+"buoi1\main.o"
+"buoi1\gpio.o"
+"buoi1\stm32f4xx_it.o"
+"buoi1\stm32f4xx_hal_msp.o"
+"buoi1\stm32f4xx_hal_tim.o"
+"buoi1\stm32f4xx_hal_tim_ex.o"
+"buoi1\stm32f4xx_hal_rcc.o"
+"buoi1\stm32f4xx_hal_rcc_ex.o"
+"buoi1\stm32f4xx_hal_flash.o"
+"buoi1\stm32f4xx_hal_flash_ex.o"
+"buoi1\stm32f4xx_hal_flash_ramfunc.o"
+"buoi1\stm32f4xx_hal_gpio.o"
+"buoi1\stm32f4xx_hal_dma_ex.o"
+"buoi1\stm32f4xx_hal_dma.o"
+"buoi1\stm32f4xx_hal_pwr.o"
+"buoi1\stm32f4xx_hal_pwr_ex.o"
+"buoi1\stm32f4xx_hal_cortex.o"
+"buoi1\stm32f4xx_hal.o"
+"buoi1\stm32f4xx_hal_exti.o"
+"buoi1\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Buoi1\Buoi1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Buoi1.map" -o Buoi1\Buoi1.axf
